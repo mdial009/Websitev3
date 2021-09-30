@@ -183,7 +183,7 @@ wwv_flow_api.create_page(
 ,p_overwrite_navigation_list=>'Y'
 ,p_page_is_public_y_n=>'Y'
 ,p_last_updated_by=>'MADANYX@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20210930060241'
+,p_last_upd_yyyymmddhh24miss=>'20210930070418'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(32836097004670656486)
@@ -1346,6 +1346,27 @@ wwv_flow_api.create_page_da_action(
 '$(''.apex-rds li:first-child'').remove();',
 '$(''.apex-rds li:first-child'').addClass(''apex-rds-first'');',
 '$(''.apex-rds li:first-child > a'').trigger(''click'');'))
+);
+wwv_flow_api.create_page_da_event(
+ p_id=>wwv_flow_api.id(37293387827874398402)
+,p_name=>'Set Sysdate For Current Job'
+,p_event_sequence=>10
+,p_bind_type=>'bind'
+,p_bind_event_type=>'ready'
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(37293387913946398403)
+,p_event_id=>wwv_flow_api.id(37293387827874398402)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_EXECUTE_PLSQL_CODE'
+,p_attribute_01=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'UPDATE JOBS',
+'set END_DATE = SYSTIMESTAMP(6)',
+'where ID =10;'))
+,p_attribute_05=>'PLSQL'
+,p_wait_for_result=>'Y'
 );
 wwv_flow_api.create_page_da_event(
  p_id=>wwv_flow_api.id(35909686521720244901)
