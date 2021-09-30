@@ -183,7 +183,7 @@ wwv_flow_api.create_page(
 ,p_overwrite_navigation_list=>'Y'
 ,p_page_is_public_y_n=>'Y'
 ,p_last_updated_by=>'MADANYX@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20210930050338'
+,p_last_upd_yyyymmddhh24miss=>'20210930060241'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(32836097004670656486)
@@ -238,7 +238,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &MONTHS. Months'
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -283,7 +283,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &MONTHS. Months '
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -328,7 +328,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months'
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -373,7 +373,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months'
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -418,7 +418,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &MONTHS. Months'
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -463,7 +463,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &MONTHS. Months '
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -508,7 +508,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &MONTHS. Months'
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -553,7 +553,7 @@ wwv_flow_api.create_card(
 ,p_title_adv_formatting=>false
 ,p_title_column_name=>'NAME'
 ,p_sub_title_adv_formatting=>true
-,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months &DAYS. Days '
+,p_sub_title_html_expr=>'&START_DATE. - &END_DATE. - &YEARS. Years &MONTHS. Months'
 ,p_body_adv_formatting=>true
 ,p_body_html_expr=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '&DESCRIPTION.',
@@ -880,18 +880,6 @@ wwv_flow_api.create_card(
 ,p_icon_position=>'START'
 ,p_media_adv_formatting=>false
 );
-wwv_flow_api.component_end;
-end;
-/
-begin
-wwv_flow_api.component_begin (
- p_version_yyyy_mm_dd=>'2021.04.15'
-,p_release=>'21.1.2'
-,p_default_workspace_id=>32532315908301997117
-,p_default_application_id=>105814
-,p_default_id_offset=>0
-,p_default_owner=>'WKSP_PERSONALWEBSITE'
-);
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(35909687916897244915)
 ,p_plug_name=>'Projects'
@@ -903,6 +891,18 @@ wwv_flow_api.create_page_plug(
 ,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'HTML'
+);
+wwv_flow_api.component_end;
+end;
+/
+begin
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2021.04.15'
+,p_release=>'21.1.2'
+,p_default_workspace_id=>32532315908301997117
+,p_default_application_id=>105814
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_PERSONALWEBSITE'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(35327165278736419033)
