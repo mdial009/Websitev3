@@ -183,11 +183,11 @@ wwv_flow_api.create_page(
 ,p_overwrite_navigation_list=>'Y'
 ,p_page_is_public_y_n=>'Y'
 ,p_last_updated_by=>'MADANYX@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20210929053649'
+,p_last_upd_yyyymmddhh24miss=>'20210930045817'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(32836097004670656486)
-,p_plug_name=>'Madany Diallo'
+,p_plug_name=>'Madany Diallosss'
 ,p_icon_css_classes=>'app-icon'
 ,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--compactTitle:t-BreadcrumbRegion--useRegionTitle:js-headingLevel-1:t-Form--slimPadding'
 ,p_plug_template=>wwv_flow_api.id(32836002884483656419)
